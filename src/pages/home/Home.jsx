@@ -1,8 +1,13 @@
-import React from 'react'
+ 
+import Topbar from '../../components/TopBar/Topbar'
+
+import { Person } from '@mui/icons-material'
 
 const home = () => {
   return (
-    <div>home</div>
+     <>
+     <Topbar />
+     </>
   )
 }
 
