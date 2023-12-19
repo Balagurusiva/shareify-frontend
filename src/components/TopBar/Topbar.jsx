@@ -2,7 +2,7 @@ import { Search, Person, Chat, Notifications, } from "@mui/icons-material"
 
 const Topbar = () => {
     return (
-        <div className="topbar-container">
+        <div className="topbar-container h-[50px] w-[100%] bg-[#ffffff]">
             <div className="topbar-left">Shareify</div>
             <div className="topbar-center">
                 <div className="searchbar">
