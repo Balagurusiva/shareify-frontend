@@ -4,10 +4,13 @@
 
 /* topbar left section */
 .topbar-left {
-    @apply flex-3
+    @apply flex-3 
 }
 .logo{ 
-    @apply font-bold ml-[20px] text-white cursor-pointer
+    @apply text-[24px]  font-bold ml-[20px]  cursor-pointer  ;
+    @layer text-blue;
+    letter-spacing:2px;
+ 
 } 
 
 /* top bar center section */
