@@ -1,7 +1,46 @@
 .sidebar{
-    @apply flex-3 h-[calc(100vh-50px)]
+    @apply flex-3 h-[calc(100vh-50px)] overflow-scroll
+}
+
+::-webkit-scrollbar{
+    @apply w-[5px]
+}
+::-webkit-scrollbar-track{
+    @apply bg-inherit
+}
+
+::-webkit-scrollbar-thumb{
+    @apply bg-[rgb(179,179,179)]
 }
 
 .sidebar-wrapper{
     @apply p-[20px]
+}
+
+.sidebar-list{
+    @apply p-0 m-0 list-none mt-[10px]
+}
+
+.sidebar-list-item{
+    @apply flex gap-3 items-center mb-[20px]
+}
+
+.sidebar-button{
+    @apply w-[150px] border-none p-[10px] rounded-[5px] font-bold bg-white text-black
+}
+
+.sidebar-hr{
+    @apply my-[20px] mx-[0px]
+}
+
+.sidebar-friend-list{
+    @apply m-0 p-0 list-none
+}
+
+.sidebar-friend{
+    @apply flex items-center mb-[15px]
+}
+
+.sidebar-friend-img{
+    @apply w-[32px] h-[32px] rounded-[50%] object-cover mr-[10px]
 }
