@@ -19,7 +19,7 @@ const Topbar = () => {
                 </div>
                 <div className="topbar-icon ">
                     <div className="topbar-icon-item">
-                        <Person />
+                        <Person  />
                         <span className="topbar-icon-badge">1</span>
                     </div>
                     <div className="topbar-icon-item">
