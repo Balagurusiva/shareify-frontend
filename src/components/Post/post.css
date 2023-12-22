@@ -31,3 +31,31 @@
 .post-date{
     @apply text-[10px]
 }
+
+.post-center{
+    @apply my-5 mx-0 px-3
+}
+
+.post-img{
+    @apply w-[100%] max-h-[500px] object-contain
+}
+
+.post-bottom{
+    @apply flex items-center justify-between px-3
+}
+
+.post-bottom-left{
+    @apply flex items-center
+}
+
+.like-icon{
+    @apply mr-1 cursor-pointer
+}
+
+.post-like-count{
+    @apply text-[10px]; 
+}
+
+.post-comment-text{
+    @apply cursor-pointer border-b-[1px] border-gray-400 text-[13px]
+}

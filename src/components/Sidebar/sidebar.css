@@ -1,5 +1,5 @@
 .sidebar{
-    @apply hidden md:flex flex-3 h-[calc(100vh-50px)] overflow-scroll
+    @apply hidden md:flex flex-3 h-[calc(100vh-50px)] overflow-scroll sticky  top-[50px]
 }
 
 ::-webkit-scrollbar{

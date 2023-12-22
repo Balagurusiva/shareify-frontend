@@ -1,6 +1,6 @@
 import React from 'react'
 import './post.css'
-import { MoreVert } from '@mui/icons-material'
+import { Favorite, MoreVert, ThumbUp } from '@mui/icons-material'
 
 const Post = () => {
     return (
@@ -19,8 +19,20 @@ const Post = () => {
                         <MoreVert />
                     </div>
                 </div>
-                <div className="post-center"></div>
-                <div className="post-bottom"></div>
+                <div className="post-center">
+                    <span className="post-text">hey my first post</span>
+                    <img className='post-img' src="public\assets\person\bala.jpg" alt="img" />
+                </div>
+                <div className="post-bottom">
+                    <div className="post-bottom-left">
+                        <ThumbUp className='like-icon' style={{"color": "14a4ff"}} />
+                        <Favorite  className='like-icon' style={{"color": "red"}}/>
+                        <span className='post-like-count'>32 people</span>
+                    </div>
+                    <div className="post-bottom-right">
+                        <span className="post-comment-text">9 comments</span>
+                    </div>
+                </div>
             </div>
         </div>
 
