@@ -3,7 +3,11 @@ import './post.css'
 
 const Post = () => {
   return (
-    <div>Post new 2 </div>
+ 
+ 
+ 
+    <div>Post new</div>
+ 
   )
 }
 
