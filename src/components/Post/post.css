@@ -1,0 +1,33 @@
+.post{
+    @apply w-[100%] rounded-[10px] my-[30px] mx-0;
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(255, 255, 255, 0.69); 
+    box-shadow: 0px 0px 16px -8px rgba(255, 255, 255, 0.69);
+}
+
+.post-wrapper{
+    @apply p-3
+}
+
+.post-top{
+    @apply flex items-center justify-between
+}
+
+.post-top-left{
+    @apply flex items-center
+}
+
+.post-data{
+    @apply flex flex-col mx-3
+}
+
+.profile-img{
+    @apply w-9 h-9 rounded-[50%] object-cover
+}
+
+.post-user-name {
+    @apply font-bold text-[15px]
+}
+
+.post-date{
+    @apply text-[10px]
+}
