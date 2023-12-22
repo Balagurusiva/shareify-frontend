@@ -7,8 +7,7 @@
     @apply flex-3 
 }
 .logo{ 
-    @apply text-[24px]  font-bold ml-[20px]  cursor-pointer  ;
-    @layer text-blue;
+    @apply text-[24px]  font-bold ml-[20px]  cursor-pointer  md:text-[#6debff]   ;
     letter-spacing:2px;
  
 } 
@@ -19,11 +18,12 @@
 }
 
 .searchbar{
-    @apply  w-[100%]  h-[35px] bg-[#333333] rounded-[30px] flex items-center
+    @apply  w-[100%]  h-[35px] bg-[#333333] rounded-[30px] flex items-center border-primary border-[1px]
 }
 
 .search-icon{
-    @apply mx-[10px] font-[20px]
+    @apply mx-[10px] font-[20px] ;
+ 
 }
 
 .searchbar-input{
@@ -35,11 +35,12 @@
 }
 /* topbar right section */
 .topbar-right {
-    @apply flex flex-4 items-center justify-around
+    @apply hidden md:flex flex-4 items-center justify-around  ;
+     
 }
 
 .topbar-links{
-    @apply flex  
+    @apply flex;
 }
 
 .topbar-link{
