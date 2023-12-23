@@ -1,3 +1,47 @@
 .rightbar{
-    @apply  hidden md:flex flex-3.5 sticky  top-[50px]
+    @apply  hidden md:flex flex-3  h-[calc(100vh-50px)]  overflow-clip sticky  top-[50px]
+}
+
+::-webkit-scrollbar{
+    @apply w-0
+}
+::-webkit-scrollbar-track{
+    @apply bg-inherit
+}
+
+::-webkit-scrollbar-thumb{
+    @apply bg-inherit
+}
+
+.rightbar-wrapper{
+    @apply  pt-5 pr-5 
+}
+
+.rightbar-friend-list{
+    @apply p-0 m-0 list-none ml-3
+}
+
+.rightbar-title{
+    @apply text-[20px] font-bold mb-2
+}
+
+.rightbar-friend{
+    @apply flex items-center mb-4
+}
+ 
+.rightbar-profile-img-container{
+    @apply mr-[10px] relative
+}
+
+.rightbar-img{
+    @apply w-10 h-10 rounded-[50%] object-cover
+}
+
+.rightbar-online{
+    @apply w-3 h-3 rounded-[50%] bg-green-500 absolute top-[-2px] right-0;
+    border:2px solid white;
+}
+
+.rightbar-user-name{
+    @apply text-[18px]
 }
