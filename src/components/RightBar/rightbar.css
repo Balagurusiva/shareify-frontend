@@ -1,17 +1,8 @@
 .rightbar{
-    @apply  hidden md:flex flex-3  h-[calc(100vh-50px)]  overflow-clip sticky  top-[50px]
+    @apply  hidden md:flex flex-3  h-[calc(100vh-50px)]   
 }
 
-::-webkit-scrollbar{
-    @apply w-0
-}
-::-webkit-scrollbar-track{
-    @apply bg-inherit
-}
-
-::-webkit-scrollbar-thumb{
-    @apply bg-inherit
-}
+ 
 
 .rightbar-wrapper{
     @apply  pt-5 pr-5 

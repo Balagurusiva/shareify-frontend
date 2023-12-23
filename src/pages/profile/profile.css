@@ -1,0 +1,36 @@
+.profile{
+    @apply flex 
+}
+
+.profile-right{
+    @apply flex-9
+}
+
+.profile-cover{
+    @apply  h-[300px] relative -z-40
+}
+
+.profile-cover-img{
+    @apply w-[100%]  h-[250px] object-cover
+}
+
+.profile-user-img{
+    @apply w-[150px] h-[150px] rounded-[50%] object-cover absolute left-0 right-0 top-[150px] m-auto;
+    border:3px solid black
+}
+
+.profile-info{
+    @apply flex  flex-col items-center justify-center mt-3
+}
+
+.profile-info-name{
+    @apply text-[24px]
+}
+
+.profile-info-desc{
+    @apply font-[300] text-gray-400
+}
+
+.profile-right-bottom{
+    @apply flex
+}
