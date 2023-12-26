@@ -36,3 +36,32 @@
 .rightbar-user-name{
     @apply text-[18px]
 }
+
+.rightbar-info{
+    @apply mb-3
+}
+
+.rightbar-info-item{
+    @apply mb-3
+}
+
+.rightbar-info-key{
+    @apply font-[500] mr-[15px] text-gray-400
+}
+
+.rightbar-info-value{
+    @apply font-[300]
+}
+
+.rightbar-followings{
+    @apply flex flex-wrap justify-center  gap-5
+}
+
+.rightbar-following{
+    @apply flex flex-col  
+}
+
+.rightbar-following-img
+{
+    @apply w-[100px] h-[100px] rounded-[5px] object-contain
+}

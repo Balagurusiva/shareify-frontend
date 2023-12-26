@@ -1,0 +1,60 @@
+ .login{
+    @apply w-[100%] h-[100vh] flex items-center justify-center  
+}
+
+.login-wrapper{
+    @apply w-[70%] h-[70%] flex
+}
+
+.login-left, .login-right{
+    @apply   flex-1 flex-col  justify-center
+}
+
+.login-logo{
+    @apply text-[50px] font-[800]  text-[#6debff]   mb-2
+}
+
+.login-desc{
+    @apply text-[20px]
+}
+
+.login-box{
+    @apply h-[500px] p-[20px] bg-gray-900 rounded-[10px] flex flex-col justify-between  gap-2
+}
+
+.login-input{
+    @apply h-[50px] rounded-[10px] pl-[20px] bg-inherit;
+    border-bottom: 1px solid #6debff;
+}
+
+.login-input:focus{
+    @apply outline-none
+}
+
+.login-btn{
+    @apply h-[50px] rounded-[10px] border-none bg-[#14a4ff] text-[20px] font-[700] cursor-pointer
+}
+
+.login-forgot{
+    @apply   text-primary
+}
+
+.login-reg-btn{
+    @apply h-[50px] rounded-[10px] border-none bg-green-500 text-[20px] font-[700] cursor-pointer
+
+}
+
+@media (max-width: 700px) {
+ .login{
+    @apply w-[100%] h-[100vh] flex items-start justify-center 
+}
+
+.login-wrapper{
+    @apply w-[70%] h-[40%]   flex-col
+}
+ 
+.login-box{
+    @apply h-[400px] p-[20px] bg-gray-900 rounded-[10px] flex flex-col justify-between  gap-2
+}
+
+} 

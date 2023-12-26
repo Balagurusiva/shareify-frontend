@@ -1,19 +1,17 @@
- import './profile.css'
+import './profile.css'
 import Topbar from '../../components/TopBar/Topbar'
 import RightBar from '../../components/RightBar/RightBar'
 import Feed from '../../components/Feed/Feed'
 import Sidebar from '../../components/Sidebar/sidebar'
 
 const Profile = () => {
-  return (
-     <>
+    return (
+        <>
             <Topbar />
             <div className="profile">
-             
-                    <Sidebar />
-             
-                 
-                 <div className="profile-right">
+
+                <Sidebar />
+                <div className="profile-right">
                     <div className="profile-right-top">
                         <div className="profile-cover">
                             <img src="public\assets\person\bala.jpg" alt="" className="profile-cover-img" />
@@ -28,11 +26,11 @@ const Profile = () => {
                         <Feed />
                         <RightBar profile />
                     </div>
-                 </div>
-                 
+                </div>
+
             </div>
         </>
-  )
+    )
 }
 
 export default Profile

@@ -7,7 +7,7 @@
     @apply flex-3 
 }
 .logo{ 
-    @apply text-[24px]  font-bold ml-[20px]  cursor-pointer  md:text-[#6debff]   ;
+    @apply text-[24px]  font-bold ml-[20px]  cursor-pointer text-[#6debff]   ;
     letter-spacing:2px;
  
 } 
