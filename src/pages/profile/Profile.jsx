@@ -4,7 +4,7 @@ import RightBar from '../../components/RightBar/RightBar'
 import Feed from '../../components/Feed/Feed'
 import Sidebar from '../../components/Sidebar/sidebar'
 
-const Profile = () => {
+const  Profile = () => {
     return (
         <>
             <Topbar />
