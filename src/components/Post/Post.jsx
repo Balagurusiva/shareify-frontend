@@ -2,12 +2,14 @@ import React, { useEffect, useState } from 'react'
 import './post.css'
 import { Favorite, MoreVert, ThumbUp } from '@mui/icons-material'
 import axios from 'axios'
+import { Avatar } from '@mui/material'
+import {format} from 'timeago.js'
 
 const Post = ({ post }) => {
 
-    const [like, setLike] = useState(post.like)
+    const [like, setLike] = useState(post.likes.length)
     const [isLiked, setIsLiked] = useState(false)
-    const [user, setUser] = useState({})
+    const [user, setUser] = useState({}) 
 
     useEffect(() => {
         const fetchUser = async () => {
@@ -16,36 +18,54 @@ const Post = ({ post }) => {
             setUser(res.data)
         }
         fetchUser()
-    }, [])
+    }, [post.userId ])
+
+    const likeHandler = () => {
+        setLike(isLiked ? like -1 : like +1)
+        setIsLiked(!isLiked)
+    }
     return (
         <div className="post">
             <div className="post-wrapper">
                 <div className="post-top">
-                    <div className="post-top-left">
-                        <img
+                    <div className="post-top-left"> 
+                        {user.profilePicture ? <img
                             className="profile-img"
-                            src={user.profilePicture}
+                            src={user.profilePicture   }
                             alt="img"
-                        />
+                        /> : <Avatar />}
+                         
                         <span className='post-data'>
                             <span className="post-user-name">{user.userName}</span>
-                            <span className="post-date">{ }</span>
+                            <span className="post-date">{format(post.createdAt) }</span>
                         </span>
 
-                    </div>
+                    </div> 
                     <div className="post-top-right">
                         <MoreVert />
                     </div>
                 </div>
                 <div className="post-center">
                     <span className="post-text">hey my first post</span>
-                    <img className='post-img' src="public\assets\person\bala.jpg" alt="img" />
+                    <img 
+                       className='post-img' 
+                       src={ import.meta.env.VITE_IMG_FOLDER + "person/bala.jpg"} 
+                       alt="img"
+                     />
                 </div>
                 <div className="post-bottom">
                     <div className="post-bottom-left">
-                        <ThumbUp className='like-icon' style={{ "color": "14a4ff" }} />
-                        <Favorite className='like-icon' style={{ "color": "red" }} />
-                        <span className='post-like-count'>32 people</span>
+                        <ThumbUp
+                           className='like-icon' 
+                           style={{ "color": "14a4ff" }}
+                           onClick = {likeHandler}
+                         />
+                        <Favorite 
+                           className='like-icon' 
+                           style={{ "color": "red" }} 
+                           onClick = {likeHandler}
+                        />
+                        <span className='post-like-count'>{like} people</span>
                     </div>
                     <div className="post-bottom-right">
                         <span className="post-comment-text">9 comments</span>
